@@ -1,0 +1,5 @@
+== claude_sandbox
+
+I do not like that the AI-agents are going everywhere on my system.
+This little box should help to keep them somewhere.
+Lets find out how useful it is
