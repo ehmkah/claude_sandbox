@@ -3,3 +3,13 @@
 I do not like that the AI-agents are going everywhere on my system.
 This little box should help to keep them somewhere.
 Lets find out how useful it is
+
+== Running locally
+
+* build the image - `./build.sh`
+* run the image - `./run.sh`
+
+== Theoretical thoughts
+
+When this is image is started claude should only be able to access the current directory.
+Claude will have its own volumne for writing his things.
