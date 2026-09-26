@@ -1,0 +1,16 @@
+services:
+  claude-box:
+    build: .
+    image: claude-box
+    stdin_open: true
+    tty: true
+    environment:
+      - ANTHROPIC_API_KEY
+    volumes:
+      - claude-home:/root
+      - claude-data:/root/.claude
+      - ${WORKSPACE_DIR:-.}:/workspace
+
+volumes:
+  claude-home:
+  claude-data:
