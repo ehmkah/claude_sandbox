@@ -3,3 +3,19 @@
 I do not like that the AI-agents are going everywhere on my system.
 This little box should help to keep them somewhere.
 Lets find out how useful it is
+
+=== Running locally
+
+* build the image - `./build.sh`
+* run the image - `./run.sh`
+
+=== TODO
+
+* create dir so .git is not readable by claude
+* try to start container and check that .git is not viewable
+* a idea how to mount multiple directories to image
+
+=== Theoretical thoughts
+
+When this is image is started claude should only be able to access the current directory.
+Claude will have its own volumne for writing his things.

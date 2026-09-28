@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-docker run -it --rm hello-world sh
+export WORKSPACE_DIR="${1:-$PWD}"
+
+docker compose run --rm claude-box

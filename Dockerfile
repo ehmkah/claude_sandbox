@@ -1,3 +1,7 @@
-FROM alpine:latest
+FROM node:20-slim
 
-CMD ["echo", "hello world"]
+RUN npm install -g @anthropic-ai/claude-code
+
+WORKDIR /workspace
+
+ENTRYPOINT ["claude"]
